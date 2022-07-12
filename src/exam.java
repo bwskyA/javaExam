@@ -41,7 +41,7 @@ public class exam {
 
         String[] namesTable = {"Adam", "Janek", "Michal", "Kasia", "Ania", "Milena", "Marzena", "Jakub", "Wiktoria", "Julka", "Krzysiu", "Agata", "Agnieszka", "Alicja", "Fryderyk", "Jarek", "Bogdan", "Juliusz", "Kajtek", "Laura"};
         System.out.println("Zadanie 4: ");
-        longestName(namesTable);
+        longestAndShortestName(namesTable);
         System.out.println("Ilosc imion zenskich: " + femaleNamesNumber(namesTable));
         System.out.println("Imiona zenskie stanowia: " + (femaleNamesNumber(namesTable) * 100) / namesTable.length + "%");
     }
@@ -144,7 +144,7 @@ public class exam {
     //- wypisz ilosc imion zenskich (to takie które się kończą na literke "a")
     //- jaki % calości stanowią imiona żeńskie
 
-    public static void longestName(String[] names) {
+    public static void longestAndShortestName(String[] names) {
         String longest = names[0];
         String smallest = names[0];
         for (int x = 0; x < names.length; x++) {
